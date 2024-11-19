@@ -53,9 +53,9 @@ def download_latest_release(download_path='.'):
 			print("Actualizando tu versión de MSP...")
 			time.sleep(1.5)
 		pathto = os.path.join(download_path, version)
-		with open(pathto, 'wb') as archivo:
-			archivo.write(requests.get(url).content)
+		with open(pathto, 'wb') as archivo:chivo.write(requests.get(url).content)
 		return version
+			ar
 flnm=download_latest_release()
 if flnm.split(".")[-1] == "msp":
 	os.system(f"chmod +x {flnm} && ./{flnm}")
